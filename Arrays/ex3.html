@@ -1,0 +1,39 @@
+<select>
+    <Option>Days</Option>
+    <script>
+    var x=1,res=""
+    while(x<=31)
+    {
+        res+=( `<option>:${x}<br></option>`)
+        x++
+    }
+    document.write(res)
+</script>
+</select>
+
+<select>
+    <Option>Months</Option>
+    <script>
+        var months=["january","february","march","april","may","june","july","august","september","october","november","december"]
+    var index=0,res=""
+    while(index<=months.length-1)
+    {
+        res+=( `<option>:${months[index]}<br></option>`)
+        index++
+    }
+    document.write(res)
+</script>
+</select>
+
+<select>
+    <Option>Year</Option>
+    <script>
+    var x=1901,res=""
+    while(x<=2022)
+    {
+        res+=( `<option>:${x}<br></option>`)
+        x++
+    }
+    document.write(res)
+</script>
+</select>

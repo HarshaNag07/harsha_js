@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //Call function directly
+        
+        window.setInterval(
+            ()=> {
+            
+            var d=new Date() //date object reference
+    
+    var year,month,day,date,h,m,s,ms,ltime;
+    
+    var months= ["January","February","March","April","May","June","July",
+            "August","September","October","November","December"];
+    
+            //months[o] --> JAN
+            //months[1]  -->  FEB //months[d.getMonth()] --> FEB
+    
+    year=d.getFullYear()
+    month=d.getMonth()
+    day=d.getDay()
+    date=d.getDate()
+    h=d.getHours()
+    m=d.getMinutes()
+    s=d.getSeconds()
+    ms=d.getMilliseconds()
+    ltime=d.toLocaleTimeString()
+
+    dateDetails = `${day}-${months[d.getMonth()].slice(0,3)}-${year}`
+    
+    document.getElementById('dtime24').innerText = `${dateDetails} [${h}:${m}:${s}]`
+    
+    document.getElementById('dtime12').innerText = `${dateDetails} [${ltime}]`
+
+
+        },1000)
+    
+    </script>
+</head>
+<body>
+    
+    <h2>JS_DATE_TIME [24 hours]</h2>
+
+    <time id="dtime24"></time>
+
+        
+    <h2>JS_DATE_TIME [12 hours]</h2>
+
+    <time id="dtime12"></time>
+
+</body>
+</html>

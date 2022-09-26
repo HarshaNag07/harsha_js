@@ -1,0 +1,31 @@
+<script>
+    var emp=
+    {
+        id:1,
+        name:'nag',
+        email:'nag@123',
+        phone:9550449488,
+    }
+
+    document.write(`<br/>*****Object.key*****<br/>`)
+    //object.property/key
+    document.write(`Id:${emp.id}<br/>`)
+    document.write(`Id:${emp.name}<br/>`)
+    document.write(`Id:${emp.email}<br/>`)
+    document.write(`Id:${emp.phone}<br/>`)
+
+    document.write(`<br/>*****Object['key']*****<br/>`)
+    //object['key']
+    document.write(`Id:${emp['id']}<br/>`)
+    document.write(`Id:${emp['name']}<br/>`)
+    document.write(`Id:${emp['email']}<br/>`)
+    document.write(`Id:${emp['phone']}<br/>`)
+
+    document.write(`<br/>*****for in loop*****<br/>`)
+
+    for(var key in emp)
+    {
+        document.write(`${key}:${emp[key]}<br/>`)
+    }
+  
+</script>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+
+    <script> //TO GET PLAIN TEXT MESSAGE
+
+        function myfun()
+        {
+            //Target input_by_id_reference
+            var input_dom=document.getElementById('uname')
+
+            //Get the value of the input
+            alert(input_dom.value) 
+
+              //Target span_by_id_reference
+              var span_dom=document.getElementById('uname_response')
+        
+              //Target span_by_id_reference
+              span_dom.innerHTML=`<u>${input_dom.value}</u>`
+              
+        }
+
+            
+
+    </script>
+</head>
+<body>
+    
+    <div class="container w-50 p-5">
+
+        <div class="mb-3"> 
+
+            <label for="form-label">Name</label>
+            <input type="text" class="form-control" id="uname" value="NAG">
+            <span id="uname_response"></span>
+
+        </div>
+
+        <div class="">
+
+            <button type="submit" class="btn btn-primary" onclick="myfun()">Read-Response</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

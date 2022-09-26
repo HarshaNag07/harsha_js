@@ -1,0 +1,16 @@
+<h1>We can define global variable inside a function</h1><script>
+
+    var email //undefined variable
+
+    function myfun()
+    {
+        email="Nag@gmail.com" //GLobal variable
+    var phone=9550449488//local variable
+        document.write(`Global-variable inside myfun-function- ${email}</br>`)
+        document.write(`Local-variable from myfun-function - ${phone}</br>`)
+    }
+    myfun()
+
+    document.write(`Global-variable outside function- ${email}</br>`) //we can access
+
+</script>

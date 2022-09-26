@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js">
+    <script src="ex19.js"></script>
+    <style>
+        .form-control
+        {
+            height: 400px;
+            resize: none;
+            border: groove lightgray 10px;
+        }
+    </style>
+    <script>
+        function myfun(request)
+        {
+            //target input by id reference
+            var textarea_dom=document.getElementById('sourcecode')
+
+            textarea_dom.value=request //li textdata assigned to textarea
+
+            //target output by id reference
+            var output_dom=document.getElementById('code_result')
+            output_dom.innerHTML=250-textarea_dom.value.length
+        }
+    </script>
+</head>
+<body>
+    <div class="container py-3">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="mb-3">
+
+                    <label class="form-label">Enter Message</label>
+
+                </div>
+
+                <textarea maxlength="250" onkeyup="myfun(this.value)" type="text" class="form-control" id="sourcecode"></textarea>
+
+                Left Charecters<output id="code_result">250</output>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h4 class="px-4">BIRTHDAY WISHES</h4>
+
+                <div class="bwishes">
+
+                    <ul class="list-group">
+
+                        <script>
+
+                            var res=""
+                            for(var bw of birthdaywishes)
+                            {
+                                res+=`
+                                    <li class="list-group-item" onclick="myfun(this.innerText)">${bw.title}
+                                        </li>
+                                `
+                            }
+
+                            document.getElementsByClassName('list-group')[0].innerHTML=res
+
+                        </script>                    
+
+                    </ul>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

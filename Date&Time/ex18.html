@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <style>
+        .form-control
+        {
+            height: 400px;
+            resize: none;
+            border: groove lightgray 10px;
+        }
+    </style>
+    <script>
+        function myfun(request)
+        {
+            //target input by id reference
+            var textarea_dom=document.getElementById('sourcecode')
+
+            textarea_dom.value=request //li textdata assigned to textarea
+
+            //target output by id reference
+            var output_dom=document.getElementById('code_result')
+            output_dom.innerHTML=250-textarea_dom.value.length
+        }
+    </script>
+</head>
+<body>
+    <div class="container py-3">
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <div class="mb-3">
+
+                    <label class="form-label">Enter Message</label>
+
+                </div>
+
+                <textarea maxlength="250" onkeyup="myfun(this.value)" type="text" class="form-control" id="sourcecode"></textarea>
+
+                Left Charecters<output id="code_result">250</output>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h4 class="">BIRTHDAY WISHES</h4>
+
+                <div class="bwishes">
+
+                    <ul class="list-group">
+
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+
+                            For many people, the word friend is just a sequence of letters. For me, it is the source of happiness and strength because of you.
+Happy Birthday, buddy!
+
+                        </li>
+
+                        
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+                            Hope your Birthday is as special as you are.
+                            May all of your dreams come true.
+                            Thanks for being such a great friend.
+                            Happy Birthday to my friend!
+                            
+
+                        </li>
+
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+                            Not everyone is as lucky as me to be blessed with a friend like you. Thank you so much for coming into my life and standing by my side through thick and thin. I hope you get all that you truly deserve. Happy Birthday to you.
+                            
+
+                        </li>
+
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+
+                            Best friends are hard to come by. That’s why I wanted to let you know just how much your friendship means to me on this special day. Happy Birthday my friend!
+
+                        </li>
+
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+                            Today is your birthday! May you receive even more blessings than you ask for, and may all good things continue to come your way. Happy birthday!
+                            
+
+                        </li>
+
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+
+                            Wishing you an awesome day, with good luck on your way; stay blessed and happy this day, my dear friend, on your birthday today.
+
+
+
+                        </li>
+
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+
+                            Angels are few, and so are you. And that is what makes you so special. Many Many Happy Returns of the day. Have an amazing day and an even more amazing year ahead.
+
+                        </li>
+
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+
+                            Smile as much you can because seeing your smiling face makes my day. Wishing you a very happy birthday with lots of love. Enjoy the day!
+
+                        </li>
+
+                    </ul>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

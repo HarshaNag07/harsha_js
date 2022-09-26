@@ -1,0 +1,13 @@
+<script>
+
+    var email="Nag@gmail.com"
+
+    function myfun()
+    {
+        var email="HARSHA@gmail.com"
+        document.write(`Local email is : ${email}</br>`)
+        document.write(`Global email is : ${window.email}</br>`)
+        document.write(`Global email is : ${this.email}`)
+    }
+    myfun()
+</script>

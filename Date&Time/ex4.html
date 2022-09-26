@@ -1,0 +1,24 @@
+<script>
+    var d=new Date() //date object reference
+
+    var year,month,day,date,h,m,s,ms,ltime;
+
+    year=d.getFullYear()
+    month=d.getMonth()
+    day=d.getDay()
+    date=d.getDate()
+    h=d.getHours()
+    m=d.getMinutes()
+    s=d.getSeconds()
+    ms=d.getMilliseconds()
+    ltime=d.toLocaleTimeString()
+
+    document.write(`year:${year}<br>`)
+    document.write(`month:${month}<br>`)
+    document.write(`day:${day}<br>`)
+    document.write(`date:${date}<br>`)
+    document.write(`h:m:s - ${h}-${m}-${s}<br>`)
+    document.write(`ltime - ${ltime}<br>`)
+    
+
+</script>

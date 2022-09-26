@@ -1,0 +1,23 @@
+<script>
+
+    var email="Nag@gmail.com"//global variable
+
+    function myfun()
+    {
+    var phone=9550449488//local variable
+        document.write(`Global-variable inside myfun-function- ${email}</br>`)
+        document.write(`Local-variable from myfun-function - ${phone}</br>`)
+    }
+    myfun()
+
+    function my()
+    {
+        document.write(`Global-variable inside my-function - ${email}</br>`)
+        document.write(`Local-variable from myfun-function - ${phone}</br>`)
+    }
+    my()
+
+    document.write(`Global-variable outside function - ${email}</br>`) //we cannot access
+    document.write(`Local-variable outside function - ${phone}</br>`)
+
+</script>

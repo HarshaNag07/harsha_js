@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfun()
+        {
+             // Target input_tag_by_tagname_reference to update dynamic req
+            var input_Tagname_dom=document.getElementsByTagName('input')[0]
+            input_Tagname_dom.value="Add JS response to input"
+        }
+        
+    </script>
+</head>
+<body>
+
+    <h1 id="res">Javascript Document Object Model</h1>
+    <h1 ></h1>
+    <h1>Javascript Document Object Model</h1>
+    <h1>Javascript Document Object Model</h1>
+
+    <p>The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.</p>
+    <br><br>
+    <label for="">Name</label><br>
+    <input type="text" value="hello"><br><br>
+    <button onclick="myfun()">DOM</button>
+</body>
+</html>

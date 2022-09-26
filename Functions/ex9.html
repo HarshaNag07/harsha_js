@@ -1,0 +1,18 @@
+<!-- using arguments we can define/reform statements -->
+
+<script>
+    function myfun(a,b,add=0,sub=0,mul=0)
+    {
+    var x=a,y=b
+    add=x+y
+    sub=x-y
+    mul=x*y
+    
+    document.write(`X value is:${x}</br>`)
+    document.write(`y value is ${y}</br>`)
+    document.write(`X+Y value is ${x+y}</br>`)
+    document.write(`X-Y value is ${x-y}</br>`)
+    document.write(`X*Y value is ${x*y}</br>`)
+}
+myfun(5,5)
+</script>
